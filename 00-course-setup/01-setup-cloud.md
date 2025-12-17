@@ -7,7 +7,7 @@ Codespaces 提供你一個免費的、瀏覽器操作方式的 VS Code 環境，
 
 ## 1.  為何建議使用 Codespaces 作為主要學習環境?
 
-| 優點 | What it means for you |
+| 優點 | 希望能說服你使用的理由 |
 |---------|----------------------|
 | ✅ 免預先安裝程式 | 假如你使用的設備是 Chromebook、iPad、學校提供的電腦等，Codespaces 都可以作為主要學習環境 |
 | ✅ 建構完善的學習環境 | Python 3, Node.js, .NET, Java 等程式都已經安裝可使用了 |
