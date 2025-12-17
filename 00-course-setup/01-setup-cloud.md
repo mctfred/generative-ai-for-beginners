@@ -1,47 +1,47 @@
-# Cloud Setup ☁️ – GitHub Codespaces
+# 雲端環境的設定方式 ☁️ – GitHub Codespaces
 
-**Use this guide if you don’t want to install anything locally.**  
-Codespaces gives you a free, browser-based VS Code instance with all dependencies pre-installed.
+**假如你不想在本機端的電腦安裝任何套件或程式，你可以參考這份指南設定雲端環境。**  
+Codespaces 提供你一個免費的、瀏覽器操作方式的 VS Code 環境，這個環境已經內建課程練習所需的套件與程式。
 
 ---
 
-## 1.  Why Codespaces?
+## 1.  為何建議使用 Codespaces 作為主要學習環境?
 
-| Benefit | What it means for you |
+| 優點 | What it means for you |
 |---------|----------------------|
-| ✅ Zero installs | Works on Chromebook, iPad, school lab PCs… |
-| ✅ Pre-built dev container | Python 3, Node.js, .NET, Java already inside |
-| ✅ Free quota | Personal accounts get **120 core-hours / 60 GB-hours per month** |
+| ✅ 免預先安裝程式 | 假如你使用的設備是 Chromebook、iPad、學校提供的電腦等，Codespaces 都可以作為主要學習環境 |
+| ✅ 建構完善的學習環境 | Python 3, Node.js, .NET, Java 等程式都已經安裝可使用了 |
+| ✅ 免費的額度 | 個人用途的帳戶享有 **每月 120 核心小時 / 60 GB-小時** 的雲端運算資源可供學習使用|
 
-> 💡 **Tip**  
-> Keep your quota healthy by **stopping** or **deleting** idle codespaces  
-> (View ▸ Command Palette ▸ *Codespaces: Stop Codespace*).
+> 💡 **小提醒**  
+> 保持你的額度始終充足的小技巧是當任一個 codespaces 不再需要使用時，記得 **停止** 或 **刪除** 閒置資源  
+> (在 VS Code 上方工具選單依序點選 View ▸ Command Palette ▸ *Codespaces: Stop Codespace*)。
 
 ---
 
-## 2.  Create a Codespace (one click)
+## 2.  一鍵建立 Codespace
 
-1. **Fork** this repo (top-right **Fork** button).  
-2. In your fork, click **Code ▸ Codespaces ▸ Create codespace on main**.  
+1. **Fork** 這個 repo (找到右上角 **Fork** 按鈕)。  
+2. 當你點過 fork 按鈕之後，再點擊 **Code ▸ Codespaces ▸ Create codespace on main**。 
    ![ialog showing buttons to create a codespace](./images/who-will-pay.webp?WT.mc_id=academic-105485-koreyst)
 
-✅ A browser VS Code window opens and the dev container starts building.
-This takes **~2 minutes** the first time.
+✅ 瀏覽器的 VS Code 視窗會開啟，以及 codespaces 運作的環境將被建立。
+首次建立環境時，大約需要等待約 **2 分鐘**。
 
-## 3. Add your API key (the safe way)
+## 3. 新增你的 OpenAI API 金鑰
 
-### Option A Codespaces Secrets — Recommended
+### 選項一、Codespaces Secrets — 推薦作法
 
-1. ⚙️ Gear icon -> Command Pallete-> Codespaces : Manage user secret -> Add a new secret.
+1. ⚙️ 齒輪圖示 -> Command Pallete-> Codespaces : Manage user secret -> Add a new secret.
 2. Name: OPENAI_API_KEY
-3. Value: paste your key → Add secret
+3. Value: 貼上你的 OpenAI 金鑰 → Add secret
 
-That’s it—our code will pick it up automatically.
+就這樣囉！我們準備好的程式將會自動處理這些資訊。
 
-### Option B .env file (if you really need one)
+### 選項二、 .env 檔案
 
 ```bash
 cp .env.copy .env
-code .env         # fill in OPENAI_API_KEY=your_key_here
+code .env         # 輸入 OPENAI_API_KEY=your_key_here
 ```
 
